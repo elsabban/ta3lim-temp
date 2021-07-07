@@ -1,0 +1,897 @@
+
+<!DOCTYPE html>
+<html>
+
+
+<!-- Mirrored from localhost/courses-main/profile.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 07 Jul 2021 14:00:30 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>تعليم</title>
+    <meta charset="utf-8">
+    <link rel="icon" href="assets/img/logo.png" type="image/gif" sizes="50x40">
+    <meta name="description" content="gellery">
+    <meta name="keywords" content="gift,online store,ecommerce">
+    <meta name="author" content="tabib team">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/dropzone.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/jquery.rateyo.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/noty.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/mint.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/rtl.css">
+
+
+
+</head>
+
+<!-- modal search--------------------- -->
+
+<body class="loading">
+    <!-- The Modal -->
+    <div class="modal fade" id="sign-modal">
+        <button type="button" class="close" data-dismiss="modal"><img src="assets/img/x.svg"></button>
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <!-- <div class="modal-header">
+          <h4 class="modal-title">Modal Heading</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div> -->
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="sign-holder">
+                        <div class="left-sec">
+                            <img src="assets/img/sign-logo.png">
+                            <h4>تسجيل</h4>
+                            <form action="http://localhost/action_page.php">
+                                <div class="form-group">
+                                    <!-- <label for="email">Email address:</label> -->
+                                    <img src="assets/img/user-sign.svg">
+                                    <input type="email" class="form-control" placeholder="ادخل البريد الالكتروني" id="email">
+                                </div>
+                                <div class="form-group">
+                                    <!-- <label for="pwd">Password:</label> -->
+                                    <img src="assets/img/psw-sign.svg">
+                                    <input type="password" class="form-control" placeholder="ادخل كلمة السر" id="pwd">
+                                </div>
+                                <div class="modal-btn">
+                                    <a href="#">هل نسيت كلمة المرور ؟</a>
+                                    <button type="submit" class="btn ">تسجيل</button>
+                                </div>
+                            </form>
+                            <img class="corner" src="assets/img/sign-dlogo.png">
+                        </div>
+
+                        <div class="right-sec bg-cover" style="background-image:url(assets/img/bg-sign.jpg)">
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal footer -->
+                <!-- <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div> -->
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------------------------------------- -->
+    <div id="overlayer"></div>
+    <div style="background-color: rgb(29, 29, 29);" class="loader-wrapper">
+        <img src="assets/img/logo.png"><br><br><br><br>
+        <div class="loader1">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- <svg
+    class="loader"
+    xmlns="http://www.w3.org/2000/svg"
+    version="1.1"
+    height="50"
+    width="50"
+  >
+    <defs>
+      <linearGradient id="Gradient1" gradientTransform="rotate(90)">
+        <stop offset="0%" stop-color="#ffffff" />
+        <stop offset="100%" stop-color="#7f9cb7" />
+      </linearGradient>
+      <linearGradient id="Gradient2" gradientTransform="rotate(90)">
+        <stop offset="0%" stop-color="#003a70" />
+        <stop offset="100%" stop-color="#7f9cb7" />
+      </linearGradient>
+      <pattern
+        id="Pattern"
+        x="0"
+        y="0"
+        width="50"
+        height="50"
+        patternUnits="userSpaceOnUse"
+      >
+        <g transform="rotate(0, 25, 25)">
+          <rect
+            shape-rendering="crispEdges"
+            x="0"
+            y="0"
+            width="50"
+            height="100"
+            fill="url(#Gradient1)"
+          />
+          <rect
+            shape-rendering="crispEdges"
+            x="25"
+            y="0"
+            width="25"
+            height="50"
+            fill="url(#Gradient2)"
+          />
+        </g>
+      </pattern>
+    </defs>
+    <circle
+      cx="25"
+      cy="25"
+      r="23"
+      stroke="#003a70"
+      style="stroke: url(#Pattern);"
+      stroke-width="2"
+      fill="transparent"
+    />
+  </svg> -->
+    </div>
+
+
+    <header class="nav-down">
+        <div class="container">
+            <div class="row">
+                <!-- right-side -->
+                <div class="col-md-6 col-lg-6">
+                    <div class="right-side">
+                        <div class="row">
+                            <!-- logo -->
+                            <div class="col-lg-4 col-md-5 col-sm-4 col-4 ">
+                                <div class="logo">
+                                    <a href="index-2.html">
+                                        <img src="assets/img/logo.png">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- search bar -->
+                            <div class="col-lg-6 col-md-7 col-sm-8 col-8">
+                                <div class="search-bar">
+                                    <form>
+                                        <div class="form-group ">
+
+                                            <input type="text" class="form-control" placeholder="ابحث عن">
+                                            <div class="search-btn">
+                                                <button class="btn btn-danger" type="submit">
+                    <img src="assets/img/search-icon.svg">
+                  </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- left-side  -->
+                <div class="col-lg-6 col-md-6">
+                    <div class="left-side">
+                        <div class="row justify-content-end">
+                            <div class="col-lg-8 col-md-8 col-sm-8 col-8">
+                                <!-- notification & messgaes -->
+                                <div class="notif">
+                                    <a href="courses-reg.html" class="btn courses-btn">
+                                        <img src="assets/img/coursaty-white.png"> كورساتي
+                                    </a>
+                                    <div class="dropdown">
+                                        <a href="index-2.html"><img src="assets/img/home-icon.png">
+
+                                        </a>
+                                        <!-- number -->
+
+                                    </div>
+                                    <div class="dropdown show">
+                                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <img src="assets/img/notific.png">
+                                            <span class="msdgs">23</span>
+                                        </a>
+
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                            <!-- display when there is no notification -->
+                                            <!-- <div class="empty-space">
+                    <img style="width:6em" src="assets/img/empty-notif.png">
+                    <p style="color:grey;margin-top: 2em;">لا يوجد لديك اشعارات</p>
+                  </div> -->
+                                            <a class="dropdown-item" href="aval-courses.html">
+                                                <div class="drop-item-img">
+                                                    <!-- circle img  -->
+                                                    <!-- default img 
+                       <img src="assets/img/profile/avatar-img.png"> -->
+
+                                                    <img src="assets/img/noty.png">
+                                                    <!-- corner icon -->
+                                                    <img class="corner-img" src="assets/img/corner.png">
+                                                </div>
+                                                <!-- notification detail -->
+                                                <div class="drop-item-detial">
+                                                    <p>كورس الاقتصاد</p>
+                                                    <p>يوجد فيديو جديد</p>
+                                                    <p>منذ 1 دقيقه</p>
+                                                </div>
+                                                <!-- status add class read to be unread -->
+                                                <span class="read"></span>
+                                            </a>
+                                            <a class="dropdown-item" href="aval-courses.html">
+                                                <div class="drop-item-img">
+                                                    <!-- circle img  -->
+                                                    <img src="assets/img/profile/avatar-img.png">
+                                                    <!-- corner icon -->
+                                                    <img class="corner-img" src="assets/img/corner.png">
+                                                </div>
+                                                <!-- notification detail -->
+                                                <div class="drop-item-detial">
+                                                    <p>كورس الاقتصاد</p>
+                                                    <p>يوجد فيديو جديد</p>
+                                                    <p>منذ 1 دقيقه</p>
+                                                </div>
+                                                <!-- status add class read to be unread -->
+                                                <span class="read"></span>
+                                            </a>
+                                            <a class="dropdown-item" href="aval-courses.html">
+                                                <div class="drop-item-img">
+                                                    <!-- circle img  -->
+                                                    <!-- default img 
+                       <img src="assets/img/profile/avatar-img.png"> -->
+
+                                                    <img src="assets/img/noty.png">
+                                                    <!-- corner icon -->
+                                                    <img class="corner-img" src="assets/img/corner.png">
+                                                </div>
+                                                <!-- notification detail -->
+                                                <div class="drop-item-detial">
+                                                    <p>كورس الاقتصاد</p>
+                                                    <p>يوجد فيديو جديد</p>
+                                                    <p>منذ 1 دقيقه</p>
+                                                </div>
+                                                <!-- status add class read to be unread -->
+                                                <span class=""></span>
+                                            </a>
+                                            <a class="dropdown-item" href="aval-courses.html">
+                                                <div class="drop-item-img">
+                                                    <!-- circle img  -->
+                                                    <!-- default img 
+                       <img src="assets/img/profile/avatar-img.png"> -->
+
+                                                    <img src="assets/img/noty.png">
+                                                    <!-- corner icon -->
+                                                    <img class="corner-img" src="assets/img/corner.png">
+                                                </div>
+                                                <!-- notification detail -->
+                                                <div class="drop-item-detial">
+                                                    <p>كورس الاقتصاد</p>
+                                                    <p>يوجد فيديو جديد</p>
+                                                    <p>منذ 1 دقيقه</p>
+                                                </div>
+                                                <!-- status add class read to be unread -->
+                                                <span class=""></span>
+                                            </a>
+                                            <a class="dropdown-item" href="aval-courses.html">
+                                                <div class="drop-item-img">
+                                                    <!-- circle img  -->
+                                                    <!-- default img 
+                       <img src="assets/img/profile/avatar-img.png"> -->
+
+                                                    <img src="assets/img/noty.png">
+                                                    <!-- corner icon -->
+                                                    <img class="corner-img" src="assets/img/corner.png">
+                                                </div>
+                                                <!-- notification detail -->
+                                                <div class="drop-item-detial">
+                                                    <p>كورس الاقتصاد</p>
+                                                    <p>يوجد فيديو جديد</p>
+                                                    <p>منذ 1 دقيقه</p>
+                                                </div>
+                                                <!-- status add class read to be unread -->
+                                                <span class=""></span>
+                                            </a>
+                                            <a class="dropdown-item" href="aval-courses.html">
+                                                <div class="drop-item-img">
+                                                    <!-- circle img  -->
+                                                    <!-- default img 
+                       <img src="assets/img/profile/avatar-img.png"> -->
+
+                                                    <img src="assets/img/noty.png">
+                                                    <!-- corner icon -->
+                                                    <img class="corner-img" src="assets/img/corner.png">
+                                                </div>
+                                                <!-- notification detail -->
+                                                <div class="drop-item-detial">
+                                                    <p>كورس الاقتصاد</p>
+                                                    <p>يوجد فيديو جديد</p>
+                                                    <p>منذ 1 دقيقه</p>
+                                                </div>
+                                                <!-- status add class read to be unread -->
+                                                <span class=""></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown show">
+                                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <img src="assets/img/msg.svg">
+                                            <span class="msdgs">23</span>
+                                        </a>
+
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                            <!-- display when there is no notification -->
+                                            <!-- <div class="empty-space">
+                    <img style="width:6em" src="assets/img/empty-chat.png">
+                    <p style="color:grey;margin-top: 2em;">لا يوجد لديك اشعارات</p>
+                  </div> -->
+                                            <a class="dropdown-item" href="#">
+                                                <div class="drop-item-img">
+                                                    <!-- circle img  -->
+                                                    <!-- default img 
+                       <img src="assets/img/profile/avatar-img.png"> -->
+
+                                                    <img src="assets/img/noty.png">
+                                                    <!-- corner icon -->
+                                                    <img class="corner-img" src="assets/img/corner.png">
+                                                </div>
+                                                <!-- notification detail -->
+                                                <div class="drop-item-detial">
+                                                    <p>كورس الاقتصاد</p>
+                                                    <p>يوجد فيديو جديد</p>
+                                                    <p>منذ 1 دقيقه</p>
+                                                </div>
+                                                <!-- number -->
+                                                <span class="msdgs">2</span>
+                                            </a>
+                                            <a class="dropdown-item" href="#">
+                                                <div class="drop-item-img">
+                                                    <!-- circle img  -->
+                                                    <!-- default img 
+                       <img src="assets/img/profile/avatar-img.png"> -->
+
+                                                    <img src="assets/img/noty.png">
+                                                    <!-- corner icon -->
+                                                    <img class="corner-img" src="assets/img/corner.png">
+                                                </div>
+                                                <!-- notification detail -->
+                                                <div class="drop-item-detial">
+                                                    <p>كورس الاقتصاد</p>
+                                                    <p>يوجد فيديو جديد</p>
+                                                    <p>منذ 1 دقيقه</p>
+                                                </div>
+                                                <!-- number -->
+                                                <span class="msdgs">46</span>
+                                            </a>
+                                            <a class="dropdown-item" href="#">
+                                                <div class="drop-item-img">
+                                                    <!-- circle img  -->
+                                                    <!-- default img 
+                       <img src="assets/img/profile/avatar-img.png"> -->
+
+                                                    <img src="assets/img/noty.png">
+                                                    <!-- corner icon -->
+                                                    <img class="corner-img" src="assets/img/corner.png">
+                                                </div>
+                                                <!-- notification detail -->
+                                                <div class="drop-item-detial">
+                                                    <p>كورس الاقتصاد</p>
+                                                    <p>يوجد فيديو جديد</p>
+                                                    <p>منذ 1 دقيقه</p>
+                                                </div>
+                                                <!-- number -->
+                                                <span class="msdgs">2</span>
+                                            </a>
+                                            <a class="dropdown-item" href="#">
+                                                <div class="drop-item-img">
+                                                    <!-- circle img  -->
+                                                    <!-- default img 
+                       <img src="assets/img/profile/avatar-img.png"> -->
+
+                                                    <img src="assets/img/noty.png">
+                                                    <!-- corner icon -->
+                                                    <img class="corner-img" src="assets/img/corner.png">
+                                                </div>
+                                                <!-- notification detail -->
+                                                <div class="drop-item-detial">
+                                                    <p>كورس الاقتصاد</p>
+                                                    <p>يوجد فيديو جديد</p>
+                                                    <p>منذ 1 دقيقه</p>
+                                                </div>
+                                                <!-- number -->
+                                                <span class="msdgs">23</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- <a href=""><img src="assets/img/notific.png"></a>
+              <a href=""><img src="assets/img/msg.svg"></a> -->
+
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-4">
+                                <!-- sign in btn -->
+                                <div class="login-btn">
+                                    <!-- <button type="button" class="btn signin btn-danger" data-toggle="modal" data-target="#sign-modal">
+                  <img src="assets/img/user-icon.svg">سجل الان </button> -->
+
+
+                                    <!-- singed in user button -->
+                                    <div class="dropdown">
+                                        <button class="btn btn-after-login dropdown-toggle" type="button" id="login-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            
+                  <div class="user-img">
+                    <img src="assets/img/def-user.png">
+                  </div>
+                  <div class="user-name">
+                   <p> tarek </p>
+                  </div>
+                </button>
+                                        <div class="user-dropdown dropdown-menu" aria-labelledby="login-dropdown">
+                                            <a class="dropdown-item" href="courses-reg.html">كورساتي</a>
+                                            <a class="dropdown-item" href="profile.html">حسابي</a>
+                                            <form class="" action="#">
+                                                <button class="dropdown-item" type="submit">تسجيل الخروج</button>
+                                            </form>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- floating chat point -->
+    <div class="chat-btn">
+        <a href="#">
+            <p>live chat <span class="chat-icon"></span></p>
+
+        </a>
+    </div>    <div class="modal custom-modal fade" id="editpsw">
+        <button type="button" class="close" data-dismiss="modal"><img src="assets/img/x.svg"></button>
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <!-- <div class="modal-header">
+          <h4 class="modal-title">Modal Heading</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div> -->
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="sign-holder">
+                        <div class="left-sec">
+                            <img src="assets/img/chng-psw.png">
+                            <!-- <h4>تسجيل</h4> -->
+                            <form action="http://localhost/action_page.php">
+                                <div class="form-group">
+                                    <!-- <label for="pwd">Password:</label> -->
+                                    <input type="password" class="form-control" placeholder=" كلمة المرور القديمه" id="psw3">
+                                    <img class="visable" src="assets/img/eye.png" alt="icon">
+                                </div>
+
+                                <div class="form-group">
+                                    <!-- <label for="pwd">Password:</label> -->
+
+                                    <input type="password" class="form-control" placeholder=" كلمة المرور الجديده" id="psw4">
+                                    <img class="visable" src="assets/img/eye.png" alt="icon">
+                                </div>
+                                <div class="form-group">
+                                    <!-- <label for="pwd">Password:</label> -->
+
+                                    <input type="password" class="form-control" placeholder="تأكيد كلمة المرور الجديده" id="psw5">
+                                    <img class="visable" src="assets/img/eye.png" alt="icon">
+                                </div>
+                                <div class="modal-btn">
+
+                                    <button type="submit" class="btn ">حفظ</button>
+                                </div>
+                            </form>
+                            <img class="corner" src="assets/img/sign-dlogo.png">
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal footer -->
+            <!-- <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div> -->
+
+        </div>
+
+    </div>
+    <section class="breadd">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-right">
+                    <nav class="d-inline-block" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index-2.html">الرئيسيه</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">ترفيه</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="user-profile">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-12">
+                    <aside class="side-panel">
+                        <div class="avatar-upload">
+                            <div class="avatar-edit">
+                                <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
+                                <label for="imageUpload"></label>
+                            </div>
+                            <div class="avatar-preview">
+                                <div id="imagePreview" style="background-image: url(assets/img/def-user.png);">
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="w-100 profile-sections">
+                            <div class="user-name">
+                                <h6>tarek mohamed</h6>
+                            </div>
+                            <div class="sections-btns">
+                                <ul class="nav ">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" data-toggle="tab" href="#acc-detail"><img src="assets/img/acc-user-icon.png" alt="icon"> حسابي </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link " data-toggle="tab" href="#acc-courses"><img src="assets/img/coursaty.png" alt="icon"> كورساتي </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <form>
+                                            <button class="w-100 nav-link btn btn-default" type="submit"><img src="assets/img/out.png" alt="icon"> تسجيل الخروج </a>
+
+                                </form>
+                            </li>
+                          </ul>
+                    </div>
+                </div>
+               </aside>
+           </div>
+           <div class="col-lg-9 col-md-8 col-12">
+            
+              
+              <!-- Tab panes -->
+              <form>
+              <div class="tab-content">
+                  <!-- account detail tap  -->
+                <div class="tab-pane container active" id="acc-detail">
+                    <h5>البيانات الشخصيه</h5>
+                    <div class="personal-detail">
+                        <div class="form-group">
+                            <label for="name1">الاسم</label>
+                            <input type="text" class="form-control" placeholder="الاسم" id="name1">
+                            <img src="assets/img/lock.png" alt="icon" >
+                          </div>
+                          <div class="form-group">
+                            <label for="mobile1">رقم الموبايل</label>
+                            <input type="text" class="form-control" placeholder="رقم الموبايل" id="mobile1">
+                            <img src="assets/img/lock.png" alt="icon" >
+                          </div>
+                          <div class="form-group">
+                            <label for="email1">البريد الالكتروني</label>
+                            <input type="email" class="form-control" placeholder="البريد الالكتروني" id="email1">
+                            <img src="assets/img/lock.png" alt="icon" >
+                          </div>
+                          
+                          <div class="form-group">
+                            <label for="pwd1">كلمة المرور</label>
+                            <input type="password" class="form-control" placeholder="كلمة المرور" id="pwd1">
+                            <a class="edit-psw" href="#" data-toggle="modal" data-target="#editpsw"> <img src="assets/img/inpt-edit.png" alt="icon"> تعديل </a>
+                          </div>
+                    </div>
+                    <h5>البيانات الدراسيه</h5>
+                    <div class="courses-detail">
+                        <div class="form-group">
+                            <label for="uni">الكليه</label>
+                            <input type="text" class="form-control" placeholder="الكليه" id="uni">
+                            <img src="assets/img/lock.png" alt="icon" >
+                          </div>
+                          <div class="form-group">
+                            <label for="sub-uni">الشعبه</label>
+                            <input type="text" class="form-control" placeholder="الشعبه" id="sub-uni">
+                            <img src="assets/img/lock.png" alt="icon" >
+                          </div>
+                          <div class="form-group">
+                            <label for="level">المستوى</label>
+                            <input type="text" class="form-control" placeholder="المستوى" id="level">
+                            <img src="assets/img/lock.png" alt="icon" >
+                          </div>
+                          
+                       
+                    </div>
+                </div>
+                <!-- user's courses -->
+                <div class="tab-pane container fade" id="acc-courses">
+                      <div class="pane-header">
+                        <h5>كورساتي</h5>
+                        <div class="form-group">
+                            <label for="sel1">المركز المشترك فيه</label>
+                            <select class="form-control" id="sel1">
+                                <option value=".all">الكل</option>
+                              <option value=".x1">ايفريست</option>
+                              <option value=".x2">ايفريست 1</option>
+                              <option value=".x3">ايفريست 2</option>
+                            </select>
+                          </div>
+                      </div>
+                      <div class="container-fluid">
+                          <div class="user-courses aval-course">
+                        <div class="row">
+                            <!-- filter based on class on select option upove .all show them all and so on -->
+                            <div class="col-lg-4 x1 all grid col-12 col-md-6">
+                                <div class="c-holder">
+                                    <div class="c-img">
+                                        <div class="bg-cover" style="background-image: url(assets/img/slider/c-img.png);"></div>    
+                                    </div>
+                                    <div class="c-detail ">
+                                         <h5 class="text-center"> كورس </h5>  
+                                         <p class="text-right"> د\عبدالسلام </p>
+                                         <p class="text-right"> ايفريست </p>
+                                         <div class="date-views">
+                                             <div class="date">
+                                               1.2.2020
+                                             </div>
+                                             <div class="studs">
+                                                <img src="assets/img/studs.png">
+                                               <span>250</span>
+                                               
+                                             </div>
+                                         </div>
+                                    </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-4 x1 all grid col-12 col-md-6">
+                                <div class="c-holder">
+                                    <div class="c-img">
+                                        <div class="bg-cover" style="background-image: url(assets/img/slider/c-img.png);"></div>    
+                                    </div>
+                                    <div class="c-detail ">
+                                         <h5 class="text-center"> كورس </h5>  
+                                         <p class="text-right"> د\عبدالسلام </p>
+                                         <p class="text-right"> ايفريست </p>
+                                         <div class="date-views">
+                                             <div class="date">
+                                               1.2.2020
+                                             </div>
+                                             <div class="studs">
+                                                <img src="assets/img/studs.png">
+                                               <span>250</span>
+                                               
+                                             </div>
+                                         </div>
+                                    </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-4 x2 all grid col-12 col-md-6">
+                                <div class="c-holder">
+                                    <div class="c-img">
+                                        <div class="bg-cover" style="background-image: url(assets/img/slider/c-img.png);"></div>    
+                                    </div>
+                                    <div class="c-detail ">
+                                         <h5 class="text-center"> كورس </h5>  
+                                         <p class="text-right"> د\عبدالسلام </p>
+                                         <p class="text-right">1 ايفريست </p>
+                                         <div class="date-views">
+                                             <div class="date">
+                                               1.2.2020
+                                             </div>
+                                             <div class="studs">
+                                                <img src="assets/img/studs.png">
+                                               <span>250</span>
+                                               
+                                             </div>
+                                         </div>
+                                    </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-4 x2 all grid col-12 col-md-6">
+                                <div class="c-holder">
+                                    <div class="c-img">
+                                        <div class="bg-cover" style="background-image: url(assets/img/slider/c-img.png);"></div>    
+                                    </div>
+                                    <div class="c-detail ">
+                                         <h5 class="text-center"> كورس </h5>  
+                                         <p class="text-right"> د\عبدالسلام </p>
+                                         <p class="text-right">1 ايفريست </p>
+                                         <div class="date-views">
+                                             <div class="date">
+                                               1.2.2020
+                                             </div>
+                                             <div class="studs">
+                                                <img src="assets/img/studs.png">
+                                               <span>250</span>
+                                               
+                                             </div>
+                                         </div>
+                                    </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-4 x3 all grid col-12 col-md-6">
+                                <div class="c-holder">
+                                    <div class="c-img">
+                                        <div class="bg-cover" style="background-image: url(assets/img/slider/c-img.png);"></div>    
+                                    </div>
+                                    <div class="c-detail ">
+                                         <h5 class="text-center"> كورس </h5>  
+                                         <p class="text-right"> د\عبدالسلام </p>
+                                         <p class="text-right">2 ايفريست </p>
+                                         <div class="date-views">
+                                             <div class="date">
+                                               1.2.2020
+                                             </div>
+                                             <div class="studs">
+                                                <img src="assets/img/studs.png">
+                                               <span>250</span>
+                                               
+                                             </div>
+                                         </div>
+                                    </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-4 x3 all grid col-12 col-md-6">
+                                <div class="c-holder">
+                                    <div class="c-img">
+                                        <div class="bg-cover" style="background-image: url(assets/img/slider/c-img.png);"></div>    
+                                    </div>
+                                    <div class="c-detail ">
+                                         <h5 class="text-center"> كورس </h5>  
+                                         <p class="text-right"> د\عبدالسلام </p>
+                                         <p class="text-right">2 ايفريست </p>
+                                         <div class="date-views">
+                                             <div class="date">
+                                               1.2.2020
+                                             </div>
+                                             <div class="studs">
+                                                <img src="assets/img/studs.png">
+                                               <span>250</span>
+                                               
+                                             </div>
+                                         </div>
+                                    </div>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                      </div>
+                </div>
+               
+              </div>
+            </form>
+        </div>
+       </div>
+   </div>   
+</section>
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-4  col-12 pos">
+                <div class="f-title">
+                    <h4>الاقسام الاساسيه</h4>
+                </div>
+                <ul class="list-unstyled links mr-3 p-0 ">
+                    <li>
+                        <a href="categs-inner.html"><img src="assets/img/link-icon.svg">كورسات جامعيه</a>
+                    </li>
+                    <li>
+                        <a href="categs-inner.html"><img src="assets/img/link-icon.svg">كورسات لغه</a>
+                    </li>
+                    <li>
+                        <a href="categs-inner.html"><img src="assets/img/link-icon.svg">كورسات ثانويه</a>
+                    </li>
+                    <li>
+                        <a href="videos.html"><img src="assets/img/link-icon.svg">ترفيه</a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="col-md-4  col-12 pos">
+                <div class="f-title">
+                    <h4>الاقسام الاساسيه</h4>
+                </div>
+                <ul class="list-unstyled links mr-3 p-0 ">
+                    <li>
+                        <a href="about.html"><img src="assets/img/link-icon.svg">من نحن</a>
+                    </li>
+                    <li>
+                        <a href="contact.html"><img src="assets/img/link-icon.svg">اتصل بنا</a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="assets/img/link-icon.svg">الشروط و الاحكام</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="col-md-4 col-12">
+                <div class="app">
+                    <div class="f-logo">
+                        <a href="index-2.html"><img src="assets/img/logo.png"></a>
+                    </div>
+                    <div class="f-down">
+                        <a href="#"><img src="assets/img/ios.svg"></a>
+                        <a href="#"><img src="assets/img/andro.svg"></a>
+                    </div>
+                    <div class="f-social">
+                        <a href="#"><img src="assets/img/face.svg"></a>
+                        <a href="#"><img src="assets/img/twitter.svg"></a>
+                        <a href="#"><img src="assets/img/whats.svg"></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</footer>
+<div class="last-sec text-center">
+    <p> © جميع الحقوق محفوظه لموقع تعليم. - " تصميم <a href="https://yisweb.com/">YIS WEB</a> "</p>
+</div>
+
+<script src="assets/js/jquery-3.4.1.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+
+<script src="assets/js/select2.full.min.js"></script>
+<script src="assets/js/swiper-bundle.min.js"></script>
+<script src="assets/js/dropzone.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/mmenu.min.js"></script>
+<script src="assets/js/jquery.mousewheel.min.js"></script>
+<script src="assets/js/headanimate.js"></script>
+<script src="assets/js/noty.min.js"></script>
+<script src="assets/js/jquery.rateyo.js"></script>
+<script src="../../cdn.rawgit.com/mattdiamond/Recorderjs/08e7abd9/dist/recorder.js"></script>
+<script src="assets/js/record.js"></script>
+<script src="assets/js/bundle.min.js"></script>
+<script src="assets/js/custom.js"></script>
+
+</body>
+
+
+
+<!-- Mirrored from localhost/courses-main/profile.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 07 Jul 2021 14:00:33 GMT -->
+</html>
